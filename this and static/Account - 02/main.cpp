@@ -12,12 +12,12 @@ int main()
     a1.display();
     a2.display();
 
-    a1.displayActiveAccounts();
+    Account::displayActiveAccounts();
 
     {
         Account a3;
-        a3.displayActiveAccounts();
+        Account::displayActiveAccounts();
     }
 
-    a1.displayActiveAccounts();
+    Account::displayActiveAccounts();
 }
