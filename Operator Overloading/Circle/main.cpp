@@ -1,4 +1,6 @@
 #include "circle.h"
+#include <iostream>
+using namespace std;
 
 int main()
 {
@@ -24,4 +26,11 @@ int main()
     c3.display();
     c3 = --c2;
     c3.display();
+
+    cout << endl
+         << (c2 > c1);
+    cout << endl
+         << (c2 < c1);
+    cout << endl
+         << (c2 == c1);
 }

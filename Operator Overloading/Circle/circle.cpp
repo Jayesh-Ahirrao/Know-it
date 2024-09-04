@@ -68,3 +68,16 @@ Circle Circle::operator--()
     temp.radius = --this->radius;
     return temp;
 }
+
+bool Circle::operator>(Circle &obj)
+{
+    return this->radius > obj.radius;
+}
+bool Circle::operator<(Circle &obj)
+{
+    return this->radius < obj.radius;
+}
+bool Circle::operator==(Circle &obj)
+{
+    return this->radius == obj.radius;
+}

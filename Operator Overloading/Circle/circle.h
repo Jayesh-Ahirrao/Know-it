@@ -21,4 +21,7 @@ public:
     Circle operator--(int);
     Circle operator--();
 
+    bool operator>(Circle &);
+    bool operator<(Circle &);
+    bool operator==(Circle &);
 };
