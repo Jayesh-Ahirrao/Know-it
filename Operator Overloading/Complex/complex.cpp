@@ -72,3 +72,8 @@ Complex Complex::operator++()
 
     return temp;
 }
+
+Complex operator+(int num, const Complex &obj)
+{
+    return Complex(obj.real + num, obj.img);
+}
