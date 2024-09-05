@@ -24,4 +24,7 @@ public:
     bool operator>(Circle &);
     bool operator<(Circle &);
     bool operator==(Circle &);
+
+    friend istream &operator>>(istream &, Circle &);
+    friend ostream &operator<<(ostream &, Circle &);
 };

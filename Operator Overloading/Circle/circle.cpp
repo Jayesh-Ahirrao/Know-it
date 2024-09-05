@@ -81,3 +81,14 @@ bool Circle::operator==(Circle &obj)
 {
     return this->radius == obj.radius;
 }
+
+istream &operator>>(istream &cinObj, Circle &circleObj)
+{
+    cinObj >> circleObj.radius;
+}
+
+ostream &operator<<(ostream &coutObj, Circle &circleObj)
+{
+    coutObj << circleObj.radius;
+    return coutObj;
+}
