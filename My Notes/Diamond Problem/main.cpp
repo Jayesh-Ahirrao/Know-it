@@ -36,7 +36,13 @@ int main()
 
     cout << "\n\t\t " << objD.b; // print 3;
 
-    cout << "\n\t\t " << objD.a; // Error:  "D::a" is ambiguous
+    // cout << "\n\t\t " << objD.a; // Error:  "D::a" is ambiguous
+
+    cout << "\n\t\t " << objD.B::a; // print 1;
+    objD.B::a = 100;
+
+    cout << "\n\t\t " << objD.B::a; // print 100;
+    cout << "\n\t\t " << objD.C::a; // print 1;
 
     return 0;
 }
