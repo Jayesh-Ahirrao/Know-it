@@ -4,6 +4,39 @@ using namespace std;
 class A
 {
 public:
+    int value;
+    A() : value(0) {}
+    void display()
+    {
+        std::cout << "Class A value: " << value << std::endl;
+    }
+};
+
+class B : virtual public A
+{
+}; // Virtual inheritance
+class C : virtual public A
+{
+}; // Virtual inheritance
+
+class D : public B, public C
+{
+};
+
+int main()
+{
+    D obj;
+    obj.value = 10; // No ambiguity, only one instance of A
+    obj.display();  // Output: Class A value: 10
+
+    return 0;
+}
+
+
+/*
+class A
+{
+public:
     int a = 1;
 };
 
@@ -46,3 +79,4 @@ int main()
 
     return 0;
 }
+*/
