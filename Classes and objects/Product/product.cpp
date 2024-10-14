@@ -13,6 +13,7 @@ Product::Product()
 
 Product::Product(char *str, int code, float unitPrice)
 {
+    // note the existing memory should first be deallocated
     this->name = new char[strlen(str) + 1];
     strcpy(this->name, str);
     this->code = code;

@@ -19,7 +19,7 @@ int main()
      cout << endl
           << "size of printf('') is: \t" << sizeof(printf("jayesh")) << "because it returns a integer";
 
-     int arr[] = {1, 2};
+     int arr[] = {1, 2, 3};
      cout << endl
           << "size of array  is: \t" << sizeof(arr); 
 

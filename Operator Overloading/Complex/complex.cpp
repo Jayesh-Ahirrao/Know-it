@@ -47,11 +47,7 @@ Complex Complex::operator-(Complex &obj)
 
 Complex Complex::operator*(Complex &obj)
 {
-    Complex temp;
-
-    temp.real = this->real * obj.real;
-    temp.img = this->img * obj.img;
-    return temp;
+    return Complex(this->real * obj.real, this->img * obj.img);
 }
 
 // int a is just given for distinguish it from pre-increment no specific reason, just acts as place holder

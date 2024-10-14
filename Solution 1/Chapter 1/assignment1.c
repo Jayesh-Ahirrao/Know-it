@@ -2,9 +2,8 @@
 
 int main(int number, char *args[])
 {
-    printf("\n%d", number);
-    // why below line is not giving null pointer exception
-    printf("\n%s\n", args[0]);
-
+    int num = 5;
+    int *p = &num;
+    *(++p) = 10;
     return 0;
 }
