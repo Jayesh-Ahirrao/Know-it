@@ -6,6 +6,7 @@ int Account::activeAccountCounts = 0;
 
 int main()
 {
+    
     Account a1;
     Account a2("User", 12000);
 
